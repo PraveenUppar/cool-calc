@@ -1,87 +1,89 @@
-# Cool Storage Cost Saving with IOPS Calculator
+<p align="center">
+  <img src="screenshots/banner.png" alt="CoolCalc Logo" />
+</p>
 
-## Introduction
+<h1 align="center">CoolCalc — Cool Storage Cost Saving with IOPS Calculator</h1>
 
-Optimizing cloud storage costs while ensuring adequate performance is a critical challenge for businesses. This project presents a React-based "Cool Storage Cost Saving with IOPS Calculator" tool designed to help users make informed decisions about their data center storage strategies. By providing real-time cost comparisons and tailored IOPS subscription recommendations across various Azure storage options, this tool empowers users to optimize data center IOPS and identify significant cooling access cost savings across different geographical regions.
+<p align="center">
+  An Azure Storage Cost Optimization &amp; IOPS Recommendation Tool
+</p>
 
-Whether you're managing a 100 TB dataset in Australia and aiming to save $126 monthly ($1,520 annually), or handling a scenario with 1,000 users each requiring 100 IOPS, this calculator helps visualize potential savings and select the most suitable storage tier.
+<p align="center">
+  <a href="https://dev-blocks.vercel.app/">
+    <img src="https://img.shields.io/website?url=https%3A%2F%2Fdev-blocks.vercel.app&label=Live%20Demo" alt="Website" />
+  </a>
+  <img src="https://img.shields.io/github/issues/PraveenUppar/Dev-Blocks" alt="Issues" />
+  <img src="https://img.shields.io/github/last-commit/PraveenUppar/Dev-Blocks" alt="Last Commit" />
+</p>
 
-<br/>
+---
 
-## Table of Contents
+## Description
 
-1.  Key Technologies and Skills
-2.  Features
-3.  Installation
-4.  Usage
-
-<br/>
-
-## Key Technologies and Skills
-
-* **React:** Frontend development for a dynamic and interactive user interface.
-* **JavaScript:** Core language for the application logic.
-* **HTML/CSS:** Structuring and styling the web application.
-* **IOPS (Input/Output Operations Per Second) Calculation:** Logic for determining IOPS requirements based on user input.
-* **Cost Calculation Logic:** Algorithms for estimating storage and cooling costs across different Azure storage tiers and regions.
-* **Data Visualization:** Presenting cost comparisons and recommendations clearly.
-
-<br/>
-
-## Features
-
-* **Real-time Cost Comparison:** Instantly view the difference in monthly and annual costs with and without "cool access" storage options.
-* **Regional Cost Analysis:** Calculate cost savings for various Azure regions (e.g., Australia, US, Europe, Asia, etc.), accounting for regional pricing variations.
-* **Tailored IOPS Recommendations:** Receive personalized IOPS subscription suggestions based on your data size, user count, and per-user IOPS requirements.
-* **Multiple Storage Options:** Compare costs and performance across 5 distinct Azure storage options:
-    * **Standard Storage**
-    * **Premium Storage**
-    * **Ultra ANF (Azure NetApp Files)**
-    * **Azure Files**
-    * **Azure Files Premium**
-* **Scalability Scenarios:** Handle complex scenarios, such as calculating costs for a large number of users with specific IOPS demands (e.g., 1,000 users each needing 100 IOPS).
-* **Intuitive User Interface:** A user-friendly interface makes it easy to input parameters and understand the results.
-
-<br/>
-
-## Installation
-
-To get a local copy up and running, follow these simple steps.
-
-**Prerequisites:**
-
-* Node.js (LTS version recommended)
-* npm or yarn
-
-**Steps:**
-
-1.  **Clone the repository:**
-    ```bash
-    git clone [https://github.com/your-username/cool-storage-iops-calculator.git](https://github.com/your-username/cool-storage-iops-calculator.git)
-    cd cool-storage-iops-calculator
-    ```
-
-2.  **Install dependencies:**
-    ```bash
-    npm install
-    # OR
-    yarn install
-    ```
-
-<br/>
-
-## Usage
-
-To run the application locally:
-
-1.  **Start the development server:**
-    ```bash
-    npm start
-    # OR
-    yarn start
-    ```
-2.  Open your web browser and navigate to `http://localhost:3000`.
+Optimizing cloud storage costs while ensuring adequate performance is a critical challenge for businesses. **CoolCalc** is a React-based calculator that helps users make informed decisions about their Azure storage strategies by providing real-time cost comparisons and tailored IOPS subscription recommendations across various storage tiers and geographical regions.
 
 The application will guide you through entering your dataset size, number of users, per-user IOPS requirements, and desired region to calculate and compare storage costs and receive IOPS recommendations.
 
-<br/>
+## Features
+
+- **Real-time Cost Comparison:** Instantly view monthly and annual cost differences with and without "cool access" storage options.
+- **Regional Cost Analysis:** Calculate savings across Azure regions (Australia, US, Europe, Asia, etc.) with regional pricing variations.
+- **Tailored IOPS Recommendations:** Personalized IOPS subscription suggestions based on data size, user count, and per-user IOPS requirements.
+- **Multiple Storage Options:** Compare costs across 5 Azure storage tiers:
+  - Standard Storage
+  - Premium Storage
+  - Ultra ANF (Azure NetApp Files)
+  - Azure Files
+  - Azure Files Premium
+- **Scalability Scenarios:** Handle complex scenarios such as 1,000 users each needing 100 IOPS.
+- **Interactive Charts:** Visualize cost savings with Chart.js-powered graphs.
+- **Intuitive UI:** User-friendly interface to input parameters and understand results at a glance.
+
+## Screenshots
+
+|            Savings Graph            |        IOPS Calculator        |
+| :---------------------------------: | :---------------------------: |
+| ![Savings](screenshots/savings.png) | ![IOPS](screenshots/iops.png) |
+
+|      Cost Comparison Graph      |
+| :-----------------------------: |
+| ![Graph](screenshots/graph.png) |
+
+## Installation
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/your-username/cool-storage-iops-calculator.git
+cd cool-storage-iops-calculator
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Start the development server
+
+```bash
+npm start
+```
+
+## Support
+
+If you encounter any issues or have questions, please [open an issue](https://github.com/your-username/cool-storage-iops-calculator/issues) on GitHub.
+
+## Contributing
+
+Contributions are welcome! To get started:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/your-feature`).
+3. Commit your changes (`git commit -m 'Add your feature'`).
+4. Push to the branch (`git push origin feature/your-feature`).
+5. Open a Pull Request.
+
+## Project Status
+
+This project is actively maintained. Contributions, feedback, and suggestions are always welcome!

@@ -2,12 +2,6 @@
   <img src="screenshots/banner.png" alt="CoolCalc Logo" />
 </p>
 
-<h1 align="center">CoolCalc — Cool Storage Cost Saving with IOPS Calculator</h1>
-
-<p align="center">
-  An Azure Storage Cost Optimization &amp; IOPS Recommendation Tool
-</p>
-
 <p align="center">
   <a href="https://dev-blocks.vercel.app/">
     <img src="https://img.shields.io/website?url=https%3A%2F%2Fdev-blocks.vercel.app&label=Live%20Demo" alt="Website" />
